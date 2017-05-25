@@ -16,7 +16,7 @@ function fastOrder(array &$data) {
     }
     //选一个基准 随便的话 就选第一个
     $pivot = current($data);
-    $left = $right = [];
+    $left = $medium = $right = [];
     foreach ($data as $v) {
         if ($v > $pivot) {//大于基准的放右边
             $right[] = $v;
